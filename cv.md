@@ -5,7 +5,7 @@
 + Telegram: @Pavitskaya;
 + Linkedin: [Darya Pavitskaya](https://www.linkedin.com/in/darya-pavitskaya-419b43205/ "click");
 + Discord: Darya Pavitskaya#2029;
-+ Phone nubber: 89967874344.
++ Phone number: 89967874344.
 
 ## About me:
 
