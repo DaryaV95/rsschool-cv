@@ -35,7 +35,9 @@ No work expirience yet. Just this project: [RSschool-cv](https://github.com/Dary
 + Italian А1.
 
 ## Code:
-`let a = "Hello ";
+```javascript
+let a = "Hello ";
 let b = "world!";
 
-console.log(a + b);`
+console.log(a + b);
+```
