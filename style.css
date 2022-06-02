@@ -82,6 +82,11 @@ a {
 
 .grid {
     display: grid;
+    grid-template-areas:
+        "photo contacts"
+        "photo education"
+        "skills code"
+        "languages work";
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
@@ -102,8 +107,36 @@ a {
     line-height: 50px;
 }
 
+.tagline {
+    grid-area: photo;
+}
+
 .tagline__img {
     border-radius: 50%;
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.education {
+    grid-area: education;
+}
+
+.work {
+    grid-area: work;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.languages {
+    grid-area: languages;
+}
+
+.code {
+    grid-area: code;
 }
 
 .footer__list {
