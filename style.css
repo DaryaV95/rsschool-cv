@@ -1,1 +1,123 @@
-/**/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("assets/fonts/Montserrat-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("assets/fonts/Montserrat-ExtraLight.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("assets/fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins-Black.ttf");
+    font-weight: 900;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    background: url("assets/img/bg.png") 0 0 no-repeat fixed,
+                url("assets/img/bg2.png") 100% 100% no-repeat fixed,
+                url("assets/img/points.png") 25% 30% no-repeat fixed,
+                url("assets/img/points.png") 100% 65% no-repeat fixed;
+    background-size: 30%, 30%, 4%, 4%;
+    background-color: #212328;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+BODY > * {
+    outline: 2px solid deeppink;
+}
+BODY > * > * {
+    outline: 2px dashed lime;
+    outline-offset: -2px;
+}
+BODY > * > * > * {
+    outline: 2px dotted dodgerblue;
+    outline-offset: -4px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background: linear-gradient(to top left, rgba(44, 86, 131, 0.6), rgba(93, 43, 84, 0.6));
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.tagline__img {
+    border-radius: 50%;
+}
+
+.footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top left, rgba(93, 43, 84, 0.3), rgba(44, 86, 131, 0.3));
+    list-style: none;
+}
+
+.footer__item {
+    display: block;
+    padding: 20px;
+}
