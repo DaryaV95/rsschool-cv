@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <title>cv</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#aboutme" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+        <li class="nav__item"><a href="#workexperience" class="nav__link">Work experience</a></li>
+        <li class="nav__item"><a href="#hardskills" class="nav__link">Hard skills</a></li>
+        <li class="nav__item"><a href="#languages" class="nav__link">Languages</a></li>
+        <li class="nav__item"><a href="#code" class="nav__link">Code</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="grid">
+        <section class="main__tagline tagline">
+          <h1 class="tagline__title">Pavitskaya Darya</h1>
+          <p class="tagline__text">Pre Junior Web Developer</p>
+          <h2 class="tagline__subtitle" id="aboutme">About me:</h2>
+          <p class="tagline__lead">I'm 26 years old. I really want to become a good developer.</p>
+          <img class="tagline__img" src="assets/img/avatar.jpg" alt="my photo" width="300">
+        </section>
+        <section class="main__contacts contacts">
+          <h2 class="contacts__subtitle" id="contacts">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item map"><a class="contacts__link" href="#">Russia, Saint-Petersburg</a></li>
+            <li class="contacts__item telegram"><a class="contacts__link" href="https://t.me/pavitskaya">Telegram</a></li>
+            <li class="contacts__item vk"><a class="contacts__link" href="https://vk.com/daryavegan">Vk</a></li>
+            <li class="contacts__item phone"><a class="contacts__link" href="tel:+79967874344">+7 (996) 787 - 43 - 44</a></li>
+            <li class="contacts__item mail"><a class="contacts__link" href="mailto:dpavitskaya@protonmail.com">dpavitskaya@protonmail.com</a></li>
+          </ul>
+        </section>
+        <section class="main__education education">
+          <h2 class="education__subtitle" id="education">Education:</h2>
+          <dl class="education__list">
+            <dt class="education__item"><a class="education__link" href="https://itmo.ru/ru/">1. ITMO University: ecomomics</a></dt>
+            <dd class="education__item">(2013 - 2017)</dd>
+            <dt class="education__item"><a class="education__link" href="https://htmlacademy.ru/intensive/htmlcss">2. HTML academy, interactive online courses. HTML and CSS</a></dt>
+            <dd class="education__item">(2020)</dd>
+            <dt class="education__item"><a class="education__link" href="https://wearecommunity.io/events/js-stage0-rss-2021q4">3. JavaScript/Front-end. Stage 0 (in progress)</a></dt>
+            <dd class="education__item">(2022)</dd>
+          </dl>
+        </section>
+        <section class="main__work work">
+          <h2 class="work__subtitle" id="workexperience">Work experience:</h2>
+          <p class="work__text">No work expirience yet. Just this project: <a class="work__link" href="https://github.com/DaryaV95/rsschool-cv">RSschool-cv</a></p>
+        </section>
+        <section class="main__skills skills">
+          <h2 class="skills__subtitle" id="hardskills">Hard skills:</h2>
+          <ul class="skills__list">
+            <li class="skills__item">HTML5<progress class="skills__progress" id="html" max="100" value="70"></progress>
+                <ul>
+                    <li class="skills__item">Accessibility</li>
+                    <li class="skills__item">Semantic HTML</li>
+                </ul>
+            </li>
+            <li class="skills__item line">CSS<progress class="skills__progress" id="css" max="100" value="60"></progress>
+              <ul>
+                  <li class="skills__item">Less/Sass</li>
+                  <li class="skills__item">Flex box</li>
+              </ul>
+            </li>
+            <li class="skills__item">БЭМ<progress class="skills__progress" id="bem" max="100" value="80"></progress></li>
+            <li class="skills__item">Git<progress class="skills__progress" id="git" max="100" value="80"></progress></li>
+            <li class="skills__item">GULP<progress class="skills__progress" id="gulp" max="100" value="50"></progress></li>
+          </ul>
+        </section>
+        <section class="main__languages languages">
+            <h2 class="languages__subtitle" id="languages">Languages:</h2>
+            <ul class="languages__list">
+                <li class="languages__item">English A1</li>
+                <li class="languages__item">Italian А1</li>
+            </ul>
+        </section>
+        <section class="main__code code">
+          <h2 class="code__subtitle" id="code">Code</h2>
+          <p class="code__text">
+              <code class="code__desc">
+              let a = "Hello ";<br>
+              let b = "world!";<br>
+              console.log(a + b);
+              </code>
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+      <div class="footer__mention">
+          <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="https://github.comDaryaV95?tab=repositories"><img class="footer__img" src="assets/svg/github1.svg" alt="logo github" width="100"></a></li>
+              <li class="footer__item"><a class="footer__link" href="https://rs.schooljs-stage0/"><img class="footer__img" src="/assets/svg/rs_school_js.svg" alt="logo rsschool" width="120"></a></li>
+              <li class="footer__item"><span class="footer__text">2022 &copy;</span></li>
+          </ul>
+      </div>
+  </footer>
+</body>
+</html>

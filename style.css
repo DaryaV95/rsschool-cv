@@ -1,0 +1,358 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat-Thin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat-ExtraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Black.ttf");
+  font-weight: 900;
+}
+
+body {
+  display: grid;
+  grid-template-rows: minmax(50px,max-content) 1fr minmax(9%,max-content);
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 17px;
+  color: #ffffff;
+  background: url("assets/img/bg.png") 0 0 no-repeat fixed,
+              url("assets/img/bg2.png") 100% 100% no-repeat fixed,
+              url("assets/img/points.png") 25% 30% no-repeat fixed,
+              url("assets/img/points.png") 100% 65% no-repeat fixed;
+  background-size: 30%, 30%, 4%, 4%;
+  background-color: #212328;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 3px solid #009FE3;
+  transition: 0.3s;
+}
+
+a:visited {
+  color: #FF8DFF;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "photo contacts"
+    "photo education"
+    "skills code"
+    "languages work";
+  grid-template-rows: 1fr 1fr 1.5fr 0.5fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.header {
+  background: linear-gradient(to top left, rgba(44, 86, 131, 0.6), rgba(93, 43, 84, 0.6));
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav__link {
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+.nav__link:hover {
+  border-bottom: 3px solid #009FE3;
+  transition: 0.3s;
+}
+
+.main__tagline {
+  padding-top: 20px;
+}
+
+.tagline {
+  grid-area: photo;
+}
+
+.tagline__title {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.tagline__text {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.tagline__subtitle,
+.contacts__subtitle,
+.education__subtitle,
+.work__subtitle,
+.skills__subtitle,
+.languages__subtitle,
+.code__subtitle {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.tagline__lead {
+  margin-bottom: 40px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 200;
+}
+
+.tagline__img {
+  border: 4px solid #B33D8A;
+  border-radius: 50%;
+}
+
+.main__contacts {
+  padding-top: 20px;
+}
+
+.contacts {
+  grid-area: contacts;
+}
+
+.contacts__subtitle {
+  margin: 0;
+}
+
+.contacts__list,
+.education__list,
+.languages__list {
+  padding: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 200;
+  list-style: none;
+}
+
+.contacts__list {
+  padding-top: 30px;
+}
+
+.languages__list {
+  line-height: 25px;
+}
+
+.contacts__item {
+  position: relative;
+  padding-left: 40px;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  background-image: url("assets/svg/map.svg");
+  left: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.telegram::before {
+  content: "";
+  position: absolute;
+  background-image: url("assets/svg/telegram.svg");
+  left: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.vk::before {
+  content: "";
+  position: absolute;
+  background-image: url("assets/svg/vk.svg");
+  left: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  background-image: url("assets/svg/phone.svg");
+  left: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.mail::before {
+  content: "";
+  position: absolute;
+  background-image: url("assets/svg/mail.svg");
+  left: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.main__education {
+  border-bottom: 2px solid #6F2656;
+  padding-bottom: 20px;
+}
+
+.education {
+  grid-area: education;
+}
+
+.education__list {
+  line-height: 22px;
+  padding-top: 30px;
+}
+
+.education__item,
+.contacts__item {
+  padding-bottom: 10px;
+}
+
+.contacts__item:nth-child(5) {
+  padding-bottom: 0;
+}
+
+.work {
+  grid-area: work;
+}
+
+.work__text {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 200;
+}
+
+.main__skills {
+  border-bottom: 2px solid #6F2656;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.skills__subtitle,
+.code__subtitle,
+.languages__subtitle,
+.work__subtitle {
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.skills__list {
+  padding-left: 15px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.skills__progress {
+  display: block;
+}
+
+.languages {
+  grid-area: languages;
+}
+
+.main__code {
+  border-bottom: 2px solid #6F2656;
+}
+
+.code {
+  grid-area: code;
+}
+
+.code__text {
+  padding: 30px;
+  background-color: rgba(31, 115, 179, 0.4);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.footer {
+  background: linear-gradient(to top left, rgba(93, 43, 84, 0.3), rgba(44, 86, 131, 0.3));
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__item {
+  display: block;
+  padding: 20px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.footer__link:hover {
+  border-bottom: none;
+}
+
+.footer__img:hover {
+  transition: all 0.7s ease-in-out;
+  transform: rotate(360deg);
+}
